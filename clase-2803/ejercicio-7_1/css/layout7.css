@@ -1,0 +1,32 @@
+body {
+  display: grid;
+  grid-auto-rows: 40% 150% 40% 40%;
+  gap: 10px;
+  padding: 10px;
+}
+
+header {
+  grid-column: 2 / 7;
+}
+
+aside {
+  grid-column: 2 / 7;
+}
+
+nav {
+  grid-row: 1 / 5;
+}
+
+article {
+  grid-column: 2 / 7;
+}
+
+footer {
+  grid-column: 2 / 7;
+}
+
+header, article, nav, aside, footer {
+  padding-left: 1em;
+  padding-top: 1em;
+  background-color: chartreuse;
+}
