@@ -1,0 +1,24 @@
+body {
+  display: grid;
+  grid-auto-rows: 60% 90% 90% 60% 40%;
+  grid-template-areas:
+    "h h h h h h h h h h"
+    "s s a a a a a a a a"
+    "n n a a a a a a a a"
+    "n n a a a a a a a a"
+    "n n f f f f f f f f";
+  gap: 10px;
+  padding: 10px;
+}
+
+header { grid-area: h; }  
+article { grid-area: a; }
+nav { grid-area: n } 
+aside { grid-area: s; }  
+footer { grid-area: f; }
+
+header, article, nav, aside, footer {
+  padding-left: 1em;
+  padding-top: 1em;
+  background-color: chartreuse;
+}
