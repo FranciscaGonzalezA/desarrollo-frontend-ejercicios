@@ -1,16 +1,21 @@
 body {
   display: grid;
-  grid-auto-rows: 50% 500% 50%;
-  grid-column: 2 / 3;grid-row: 2 / 4;
+  grid-auto-rows: 60% 300% 48%;
   grid-template-areas:
-    "header header header"
-    "nav article sidebar"
-    "footer footer footer";
-  gap: 20px;
+    "h h h h h h h h h h"
+    "a a a a a a a n n s"
+    "f f f f f f f f f f";
+  gap: 10px;
+  padding: 10px;
 }
 
-header { grid-area: header; }  
-  article {    grid-area: article; }
-nav { grid-area: nav } 
-  aside { grid-area: sidebar; }  
-  footer { grid-area: footer; }
+header { grid-area: h; }  
+article { grid-area: a; }
+nav { grid-area: n } 
+aside { grid-area: s; }  
+footer { grid-area: f; }
+
+header, article, nav, aside, footer {
+  padding-left: 1em;
+  padding-top: 1em;
+}
