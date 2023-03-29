@@ -1,0 +1,16 @@
+body {
+  display: grid;
+  grid-auto-rows: 50% 500% 50%;
+  grid-column: 2 / 3;grid-row: 2 / 4;
+  grid-template-areas:
+    "header header header"
+    "nav article sidebar"
+    "footer footer footer";
+  gap: 20px;
+}
+
+header { grid-area: header; }  
+  article {    grid-area: article; }
+nav { grid-area: nav } 
+  aside { grid-area: sidebar; }  
+  footer { grid-area: footer; }

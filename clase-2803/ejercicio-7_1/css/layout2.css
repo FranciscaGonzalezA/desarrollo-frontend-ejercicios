@@ -1,0 +1,21 @@
+body {
+  display: grid;
+  grid-auto-rows: 100% 500% 100%;
+  gap: 10px;
+}
+
+header {
+  grid-column: 1 / 10;
+}
+
+nav {
+  grid-row: 2 / 4;
+}
+
+article {
+  grid-column: 2 / 9;
+}
+
+footer {
+  grid-column: 1 / 10;
+}
